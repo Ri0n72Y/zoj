@@ -1,5 +1,7 @@
 // balloons
+// skipped
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class zoj1003 {
@@ -18,11 +20,23 @@ public class zoj1003 {
     }
 
     static boolean isLying(int num) {
+        return false;
+    }
 
-        for (int i = 2; i < Math.min(num / 2, 100); i++) {
-            if (num % i == 0) {
-                return isLying(num / i);
-            }
+    static ArrayList<ArrayList<Integer>> getFactorGroups(int num) {
+        ArrayList<ArrayList<Integer>> factorList = new ArrayList<>();
+
+        return factorList;
+    }
+
+    static ArrayList<Integer> getFactors(int num, int fac) {
+        return null;
+    }
+
+    static boolean isPrime(int num) {
+        if (num == 2 || num == 3) return true;
+        for (int i = 3; i < Math.sqrt(num); i++) {
+            if (num % i == 0) return false;
         }
         return true;
     }
